@@ -1,0 +1,202 @@
+body {
+	background-color: #F1F1F1;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #999;
+	margin: 0px;
+	background:#FCAEBB!important;
+	background-size:100%;
+	overflow-x:hidden;
+}
+.fl{
+	float:left;
+	display:inline-block;
+}
+.btn-red{ background:#a60000!important; color:#fff!important;}
+.box-danger{ background:#d9534f!important; border-color:#d43f3a!important;}
+h1 {
+	font-size: 16px;
+	color: #666;
+	text-shadow: 1px 1px 1px #fff;
+	font-family: "微软雅黑"!important;
+}
+
+#wide-wrapper {
+	background: url(bg.jpg) repeat-x;
+	height: 520px;
+}
+
+#header {
+	width: 280px;
+	margin: 0px auto;
+	padding-top: 75px;
+}
+
+#carousel {
+	width: 870px;
+	height: 450px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+
+/*
+arranges the images in a grid
+
+this style will be applied only before the 
+carousel is instantiated or if the user doesn't have
+javascript enabled;
+
+feel free to replace this style with your preferred one
+*/
+
+#carousel {
+	list-style: none;
+	padding: 0px;
+}
+
+#carousel li {
+	float: left;
+}
+
+#carousel .tooltip,
+#carousel .bigImage,
+#carousel .title,
+#carousel .description {
+	position: absolute;
+	left: -9999px;
+}
+
+#text {
+	width: 650px;
+	margin: 0px auto;
+	margin-top: -20px;
+}
+
+#text p {
+	padding: 5px 10px;
+}
+
+#text #selected-title {
+	width: 80px;
+	background-color: #111;
+	font-style: italic;
+}
+
+#text #selected-description {
+	background-color: #111;
+}
+
+#controls {
+	width: 234px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+#controls a {
+	margin: 0px 20px;
+	cursor: pointer;
+}
+
+#controls #left {
+	background: url(arrows.png);
+	width: 38px;
+	height: 38px;
+	float: left;
+}
+
+#controls #right {
+	background: url(arrows.png) -38px 0px;
+	width: 38px;
+	height: 38px;
+	float: left;
+}
+
+#controls #auto-scroll {
+	width: 38px;
+	height: 38px;
+	float: left;
+}
+
+#example-description {
+	margin: 0px;
+	padding: 0px;
+	background-color: #DDD;
+	border-top: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+#example-description p {
+	color: #666;
+	font-style: italic;
+	width: 750px;
+	margin: 0px auto;
+	padding: 10px 0px;
+}
+
+#example-description #navigation {
+	width: 300px;
+	height: 25px;
+	margin: 10px auto 0px;
+}
+
+#example-description #navigation a {
+	background-color: #F1F1F1;
+	text-decoration: none;
+	color: #666;
+	padding: 5px 10px;
+	margin: 0px 5px;
+	border: #CCC solid 1px;
+}
+
+#carousel .selected {
+	border: 2px solid #d43f3a;
+}
+
+#selected-title {
+	color: #fff;
+}
+
+.box-fun {
+	position:relative;
+	z-index: 1;
+	width: 400px;
+	margin: 10px auto;
+	margin-top:100px;
+}
+.link-zjmd{
+	position: absolute;
+	top:0; 
+	right:-120px;
+	height:34px;
+	line-height:34px;
+}
+#list-current li img{ width:60px;}
+.list-award {
+	margin:0!important;
+}
+.list-award li img{
+	width:30px;
+}
+.list-award li p{
+	background:#d9534f;
+	color:#fff;
+}
+h1{ font-size:30px!important;}
+.back{
+	position: absolute;
+	top:50px;
+	right:50px;
+	width:100px;
+	height:100px;
+	line-height: 100px;
+	background:#d43f3a;
+	border-radius: 50px;
+	text-align:center;
+	color:#fff;
+	text-decoration: none;
+	font-size:30px;
+	font-family: "隶书";
+}
+.back:hover{ color:#fff; text-decoration: none;}
+#carousel img.current{ z-index:999999!important;}

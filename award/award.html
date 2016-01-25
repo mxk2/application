@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>抽奖</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<style>
+			body{
+				overflow:hidden;
+			}
+		</style>
+	</head>
+	<body >
+		<ul id="carousel"></ul>
+		<div id="text" style="display:none;">
+			<p id="selected-title">Title</p>
+		</div>
+		<div class="box-fun">
+			<div class="input-group">
+				<span class="input-group-btn">
+					<button id="btn-reset" class="btn btn-default btn-danger" type="button">重置</button>
+				</span>
+				<span class="input-group-addon box-danger">
+					<select name="" id="list-jiang">
+						<option value="0">特等奖</option>
+						<option value="1">一等奖</option>
+						<option value="2">二等奖</option>
+						<option value="3">三等奖</option>
+						<option value="4">四等奖</option>
+						<option value="5">纪念奖</option>
+						<option value="6">神秘奖</option>
+					</select>
+				</span>
+				<input id="num" type="text" class="form-control" placeholder="中奖人员数量">
+				<span class="input-group-btn">
+					<button id="btn-ready" class="btn btn-default btn-danger" type="button">准备</button>
+					<button id="btn-start" class="btn btn-default btn-danger" type="button">开始</button>
+				</span>
+			</div>
+			<a class="link-zjmd" href="中奖名单.html">查看完整中奖名单</a>
+		</div>
+		<h1 id="h1" class="text-center">特等奖</h1>
+		<ul id="list-current" class="list-inline text-center list-award">
+			<li>
+				<img src="images/img-404.jpg" alt="" />
+				<p>姓名</p>
+			</li>
+		</ul>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.carousel.min.js"></script>
+		<script type="text/javascript" src="js/jq.snow.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script>
+			$(document).ready(function(){
+				award.init();
+			});
+		</script>
+	</body>
+
+</html>
